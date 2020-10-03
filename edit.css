@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+    /* div brand */
+.brand {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.brand .logo {
+    width: 50px;
+    height: 50px;
+    margin: auto 5px;
+}
+
+.brand h1 {
+   font-family: 'Inconsolata', monospace;
+   font-size: 30px;
+   text-decoration: underline;
+   margin: auto 5px;
+}
+
+    /* end div brand */
+
+    /* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.navbar li {
+    padding: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.navbar .specialNav {
+    border-radius: 10px;
+    background-color: #2E3148;
+    border: 5px solid white;
+    padding: 10px;
+    color: white;
+    margin: -15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    box-shadow: 2px 5px 10px #2E3148;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 10px;
+    margin: -12px;
+}
+
+    /* end navbar */
+
+/* end of header */
+
+/* main */
+
+    /* jumbotron */
+.jumbotron {
+    background-image: url(/img/space-background2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2E3148;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0) 70%);
+    opacity: 70%;
+}
+
+.teksJumbotron {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: 5px solid white;
+    border-radius: 25px;
+    color: white;
+}
+
+.teksJumbotron h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    padding: 0 20px;
+}
+
+.teksJumbotron p {
+    font-size: 20px;
+    text-indent: 1.4em;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* main */
+main {
+    border: 0.1px solid black;
+    background-color: #2E3148;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #26283a, #393c64);
+}
+
+    /* Info */
+
+#informasi h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+    /* wrapper */
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    margin: 20px auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+/* kotak */
+
+.kotak {
+    background-color: hsla(0, 0%, 100%, 0.918);
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.kotak:hover {
+    box-shadow: 2px 5px 40px 10px #f3f3f3;
+}
+
+
+.kotak img {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.kotak h4 {
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.kotak p {
+    padding: 20px;
+    margin-top: -20px;
+    height: auto;
+}
+
+/* Review */
+#review {
+    margin: 10vh auto;
+}
+
+#review h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white; 
+}
+
+.containerReview {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 20px;
+}
+
+.kotakReview {
+    margin: 5vh 0;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex: 1;
+}
+
+.kotakReview:hover {
+    box-shadow: 2px 5px 40px 10px #f3f3f3;
+    transform: scale(1.3);
+    transition: 0.5s all;
+}
+
+.kotakReview img{
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 20px auto;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.kotakReview h4 {
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.kotakReview p {
+    padding: 20px;
+    margin-top: -20px;
+    height: auto;
+    line-height: 1.5em;
+}
+
+.kotakReview p span {
+    font-size: 25px;
+    color: rgb(61, 61, 61);
+}
+
+/* aside the creator */
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10vh;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+
+/* profil */
+
+.profil {
+    margin: 0 auto;
+    width: 30vw;
+    border-radius: 30px;
+    background-color: white;
+    height: auto;
+    
+}
+
+.profil h3 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.card-container {
+    
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-container img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 20px auto;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.card-container h4 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card-container h5 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.card-container h5::before {
+    content: " ";
+    display: block;
+    background-image: url(img/atom.png);
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 2px 5px 0 0;
+}
+
+.card-container p {
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5vh;
+    justify-content: space-around;
+}
+
+.socialmedia img {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+/* Form */
+.form {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin: auto 0;
+}
+
+.form h4 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+.form input[type=text], textarea {
+    width: 60%;
+    display: block;
+    margin: 5px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+textarea {
+    height: 15vh;
+}
+
+.form input[type=submit] {
+    background-color: #2E3148;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 12px 20px;
+    color:white;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* footer */
+
+#mainFooter {
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+#mainFooter p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 900px) {
+    .kotakReview:hover {
+        transform: scale(1.2);
+        transition: 0.5s all;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .navbar a:hover {
+        box-shadow: 2px 5px 10px #2E3148;
+        border-radius: 10px;
+        border: 2px solid white;
+        padding: 10px;
+        margin: -12px;
+    }
+
+    .wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* hamburger */
+    .hamburger {
+        margin: 20px auto;
+        cursor: pointer; 
+    }
+
+    .line {
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        border-radius: 20px;
+        margin: 3px;
+    }
+
+    .lineOpen {
+        z-index: 2;
+        position: fixed;
+        background-color: white;
+    }
+
+    /* end hamburger */
+
+    
+    .navbar {
+        display: none;
+    }
+
+    .navbarOpen {
+        position: fixed;
+        background-color: #2E3148;
+        z-index: 1;
+        width: 80%;
+        height: 100vh;
+        margin: 0;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .navbar a, .navbar li {
+        color: white;
+        text-align: center;
+    }    
+    
+    /* Teks jumbotron */
+    .teksJumbotron {
+        width: 80%;
+        left: 10%;
+    }
+    /* end teks jumbotron */
+
+    /* wrapper */
+    .wrapper {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    /* Container Review */
+    .containerReview {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: 0 auto;
+        column-gap: 2vh;
+        flex-direction: column;
+    }
+    
+    .kotakReview:hover {
+        box-shadow: 2px 5px 40px 10px #f3f3f3;   
+    }
+
+    /* The Creator */
+    aside {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+
+    /* profil */
+
+    .profil {
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 30px;
+        background-color: white;
+        height: auto;
+    }
+    
+    .form input[type=text], textarea {
+        width: 80%;
+    }
+}
